@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root{
+    --cor-de-fundo:#F1F1F1;
+    --cor-do-retangulo:#FFFFFF;
+    --cor-de-letra:#000000;
+    --cor-de-botao:#151823;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.conteudo{
+    background-color: var(--cor-de-fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+    
+}
+
+.retangulo_principal{
+display: flex;
+box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.2);
+height: 674px;
+width: 1062px;
+}
+.amarelo,.branco{
+    height: 674px;
+    width: 531px;
+    
+}
+
+.branco{
+    background-color: var(--cor-do-retangulo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 90px 0 90px; 
+    gap: 20px;
+    box-sizing: border-box;}
+
+.amarelo{
+ background:  linear-gradient(177.42deg, #FFEC42 21.56%, #E2C151 60.89%, #10131D 60.9%);
+ 
+}
+
+.tenis{
+    position: relative;
+    top: 28%;
+    left: 3%;
+    transition: transform 0.3s ease
+
+}
+.titulo__principal{
+    font-family: Nunito Sans;
+font-size: 61.36px;
+font-weight: 700;
+line-height: 71.49px;
+text-align: left;
+
+
+}
+.titulo__secundario{
+color: rgba(0, 0, 0, 0.5);
+font-family: Nunito Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+
+
+}
+.botao{
+    background-color: var(--cor-de-botao);
+    color: var(--cor-de-fundo);
+    font-family: "nunito sans";
+    text-decoration: none;
+    width: 238px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.botao:hover{
+    color: var(--cor-de-letra);
+    background-color: var(--cor-do-retangulo);
+    border:2px solid #000000;
+    font-family: "nunito sans";
+    font-weight: 700;
+}
+.tenis:hover{
+    transform: rotate(3deg) scale(1.2);
+}
+@media (max-width:620px){
+    .retangulo_principal{
+        flex-direction: column;
+        width: 100vw;
+       
+
+    }
+    .titulo__principal{
+        
+        font-size: 45px;
+        
+    }
+    .tenis{
+        width: 60%;
+        top: 24%;
+        left: 25%;
+    }
+    .amarelo,.branco{
+        width:100vw;
+    }
+    
+    }
+    
+        
+    
+    
+
+
+
+
+    
+
+
+    
+
+   
